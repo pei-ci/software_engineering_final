@@ -4,3 +4,8 @@
 過程中遇到問題的紀錄於[my blog](https://peggyshenblog.blogspot.com/2023/03/cross-origin-request-blocked-mixed.html)。  
 另外負責撰寫[測試報告](https://docs.google.com/document/d/14Y0hdzthHoneP0MGVI4QRNZvm_bvPDHJvwz9rdFm2t4/edit?usp=share_link)使用Sahi Pro做網頁回歸測試。
 
+關於資料庫設計:  
+1.說明  
+分為八大資料表，分別為 SingalFood、FoodType、Foods、Order、AddonFood、Foods_Customization、Customization、ComboFood，由主要 foods 去參考其他 tables，為了避免一個人點多份單點、套餐用了 NO 屬性來區別每份，而一份訂單只會有一份 Order，並由 Order 去參考 Foods。  
+2.ER Model
+![image](https://user-images.githubusercontent.com/71923853/235461581-0fb2a1d7-3d54-4a3a-9b0c-d839a336eecb.png)

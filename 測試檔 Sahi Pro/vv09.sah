@@ -1,0 +1,16 @@
+_click(_button("中文"));
+_click(_image("where"));
+_click(_link("點心"));
+_click(_link("選擇[5]"));
+_click(_heading5("OREO冰炫風[1]"));
+_click(_button("確定"));
+_click(_heading1("購物車"));
+_click(_link("確定"));
+_assertExists(_heading4("請先選擇付款方式"));
+_assertVisible(_heading4("請先選擇付款方式"));
+_assertEqual("請先選擇付款方式", _getText(_heading4("請先選擇付款方式")));
+_click(_heading4("至櫃檯結帳"));
+_click(_image("cash.jpg"));
+_assertExists(_heading2("訂單已完成,以下是您的餐點"));
+_assertVisible(_heading2("訂單已完成,以下是您的餐點"));
+_assertEqual("訂單已完成,以下是您的餐點", _getText(_heading2("訂單已完成,以下是您的餐點")));

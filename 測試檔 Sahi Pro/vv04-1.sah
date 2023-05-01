@@ -1,0 +1,10 @@
+_click(_button("中文"));
+_click(_image("where"));
+_click(_link("選擇[9]"));
+_click(_heading5("雙層牛肉吉事堡[1]"));
+_click(_button("確定"));
+//確認購物車
+_click(_heading1("購物車"));
+_assertExists(_div("雙層牛肉吉事堡 $70 x1"));
+_assertVisible(_div("雙層牛肉吉事堡 $70 x1"));
+_assertEqual("雙層牛肉吉事堡 $70 x1", _getText(_div("雙層牛肉吉事堡 $70 x1")));

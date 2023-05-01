@@ -1,0 +1,19 @@
+_click(_button("中文"));
+_click(_image("where"));
+_click(_link("選擇"));
+_click(_heading5("薑燒豬肉長堡[1]"));
+_click(_div("combo-detail-card"));
+_click(_button("確定"));
+_click(_heading1("購物車"));
+//原本數量=1
+_assertExists(_span("1"));
+_assertVisible(_span("1"));
+_assertEqual("1", _getText(_span("1")));
+//按三次減號
+_click(_italic("bi bi-dash-circle"));
+_doubleClick(_italic("bi bi-dash-circle"));
+_click(_italic("bi bi-dash-circle"));
+//確認數量是否為0
+_assertExists(_span("0"));
+_assertVisible(_span("0"));
+_assertEqual("0", _getText(_span("0")));

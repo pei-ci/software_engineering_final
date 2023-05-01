@@ -1,0 +1,10 @@
+_click(_button("中文"));
+_click(_image("where"));
+_click(_link("點心"));
+_click(_link("選擇[6]"));
+_click(_heading5("蘋果派[1]"));
+_click(_button("確定"));
+_click(_italic("bi bi-cart-plus-fill"));
+_assertExists(_div("蘋果派 $35 x1"));
+_assertVisible(_div("蘋果派 $35 x1"));
+_assertEqual("蘋果派 $35 x1", _getText(_div("蘋果派 $35 x1")));

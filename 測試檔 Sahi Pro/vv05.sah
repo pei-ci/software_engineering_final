@@ -1,0 +1,29 @@
+_click(_button("中文"));
+_click(_image("where"));
+_click(_link("選擇[3]"));
+_click(_heading5("BLT辣脆雞腿堡套餐"));
+//修改配餐
+_click(_button("變更內容"));
+//改成麥脆雞腿(原)+中薯
+_assertExists(_heading5("麥脆雞腿(原)+中薯"));
+_assertVisible(_heading5("麥脆雞腿(原)+中薯"));
+_assertEqual("麥脆雞腿(原)+中薯", _getText(_heading5("麥脆雞腿(原)+中薯")));
+_click(_link("選擇[19]"));
+_click(_button("變更內容"));
+_click(_image("combo-food-img2"));
+//修改飲料
+_click(_button("變更內容[1]"));
+//改成經典冰美式咖啡(無糖)
+_click(_heading5("經典冰美式咖啡(無糖)"));
+_assertExists(_heading5("經典冰美式咖啡(無糖)"));
+_assertVisible(_heading5("經典冰美式咖啡(無糖)"));
+_assertEqual("經典冰美式咖啡(無糖)", _getText(_heading5("經典冰美式咖啡(無糖)")));
+_click(_link("選擇[30]"));
+_click(_button("變更內容[1]"));
+_click(_button("確定"));
+_click(_italic("bi bi-cart-plus-fill"));
+_click(_paragraph("card-text[2]"));
+//確認購物車
+_assertExists(_div("BLT辣脆雞腿堡 麥脆雞腿(原)+中薯 經典冰美式咖啡(無糖) 無加價購 確認1刪除"));
+_assertVisible(_div("BLT辣脆雞腿堡 麥脆雞腿(原)+中薯 經典冰美式咖啡(無糖) 無加價購 確認1刪除"));
+_assertEqual("BLT辣脆雞腿堡 麥脆雞腿(原)+中薯 經典冰美式咖啡(無糖) 無加價購 確認1刪除", _getText(_div("BLT辣脆雞腿堡 麥脆雞腿(原)+中薯 經典冰美式咖啡(無糖) 無加價購 確認1刪除")));

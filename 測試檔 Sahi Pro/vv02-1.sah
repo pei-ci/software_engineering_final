@@ -1,0 +1,26 @@
+//初始頁面，確認英文還是英文、其他內容皆為中文
+_click(_button("中文"));
+_assertExists(_button("english"));
+_assertVisible(_button("english"));
+_assertEqual("english", _getText(_button("english")));
+_assertExists(_heading2("內用"));
+_assertVisible(_heading2("內用"));
+_assertEqual("內用", _getText(_heading2("內用")));
+_assertExists(_heading2("外帶"));
+_assertVisible(_heading2("外帶"));
+_assertEqual("外帶", _getText(_heading2("外帶")));
+_assertExists(_heading2("請選擇語言"));
+_assertVisible(_heading2("請選擇語言"));
+_assertEqual("請選擇語言", _getText(_heading2("請選擇語言")));
+_click(_image("where"));
+//選餐頁面，確認分類與餐點名稱皆為中文
+_click(_link("主餐"));
+_click(_link("主餐"));
+_click(_link("飲料"));
+_assertExists(_heading5("冰蜂蜜奶茶"));
+_assertVisible(_heading5("冰蜂蜜奶茶"));
+_assertEqual("冰蜂蜜奶茶", _getText(_heading5("冰蜂蜜奶茶")));
+_click(_link("點心"));
+_assertExists(_heading5("新經典三拼"));
+_assertVisible(_heading5("新經典三拼"));
+_assertEqual("新經典三拼", _getText(_heading5("新經典三拼")));

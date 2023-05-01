@@ -1,0 +1,16 @@
+_click(_button("中文"));
+_click(_heading2("內用"));
+_click(_image("where"));
+_click(_link("選擇"));
+_click(_heading5("薑燒豬肉長堡[1]"));
+_click(_button("確定"));
+_click(_heading1("購物車"));
+_click(_link("確定"));
+_click(_heading4("快速結帳"));
+_click(_image("card.jpg"));
+_click(_link("自行取餐"));
+_click(_image("where"));
+_click(_heading4("個人發票"));
+_click(_heading4("公司統一編號"));
+_click(_heading4("愛心捐贈"));
+_click(_heading4("請選擇電子發票類型"));

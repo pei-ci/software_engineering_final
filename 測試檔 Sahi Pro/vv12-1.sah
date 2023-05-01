@@ -1,0 +1,26 @@
+_click(_button("中文"));
+_click(_heading2("內用"));
+_click(_image("where"));
+_click(_link("選擇"));
+_click(_heading5("薑燒豬肉長堡[1]"));
+_click(_button("確定"));
+_click(_link("飲料"));
+_click(_link("選擇[5]"));
+_click(_heading5("經典冰美式咖啡(無糖)[1]"));
+_click(_button("確定"));
+_click(_link("點心"));
+_click(_link("選擇[4]"));
+_click(_heading5("酥嫩雞翅[1]"));
+_click(_button("確定"));
+_click(_heading1("購物車"));
+_click(_italic("bi bi-plus-circle[1]"));
+_click(_link("確認[1]"));
+_click(_link("確認"));
+_click(_link("確認[2]"));
+_click(_link("確定"));
+_click(_heading4("至櫃檯結帳"));
+_click(_image("cash.jpg"));
+//確認訂單已成立
+_click(_heading1("訂單已成立"));
+//確認瀏覽訂單餐點資訊
+_click(_heading2("訂單已完成,以下是您的餐點"));

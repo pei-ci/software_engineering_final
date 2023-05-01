@@ -1,0 +1,23 @@
+_click(_button("中文"));
+_click(_image("where"));
+_click(_link("選擇"));
+_click(_heading5("薑燒豬肉長堡[1]"));
+_click(_button("確定"));
+_click(_heading1("購物車"));
+_click(_link("確定"));
+_click(_heading4("快速結帳"));
+_click(_image("card.jpg"));
+_click(_link("自行取餐"));
+_click(_image("where[1]"));
+_click(_heading4("請選擇電子發票類型"));
+_click(_heading4("個人發票"));
+_click(_image("where"));
+_click(_heading4("掃描手機條碼"));
+_click(_image("where[1]"));
+//確認可輸入載具編號
+_click(_heading4("請輸入載具編號"));
+_setValue(_textbox("form-control"), "123456");
+_click(_button("送出"));
+//確認畫面跳轉
+_click(_heading1("訂單已成立"));
+_click(_link("完成"));

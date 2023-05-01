@@ -1,0 +1,19 @@
+_click(_button("中文"));
+_click(_image("where"));
+_click(_link("選擇"));
+_click(_heading5("薑燒豬肉長堡[1]"));
+_click(_button("確定"));
+//進入購物車
+_click(_heading1("購物車"));
+//按取消
+_click(_link("取消"));
+//確認是否返還選餐頁面
+_assertExists(_link("主餐"));
+_assertVisible(_link("主餐"));
+_assertEqual("主餐", _getText(_link("主餐")));
+_assertExists(_link("飲料"));
+_assertVisible(_link("飲料"));
+_assertEqual("飲料", _getText(_link("飲料")));
+_assertExists(_link("點心"));
+_assertVisible(_link("點心"));
+_assertEqual("點心", _getText(_link("點心")));

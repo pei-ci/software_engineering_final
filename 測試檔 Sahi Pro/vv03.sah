@@ -1,0 +1,59 @@
+_click(_button("中文"));
+_click(_image("where"));
+//主餐類別
+_click(_link("主餐"));
+//主餐項目
+_assertExists(_heading5("薑燒豬肉長堡"));
+_assertVisible(_heading5("薑燒豬肉長堡"));
+_assertEqual("薑燒豬肉長堡", _getText(_heading5("薑燒豬肉長堡")));
+_click(_link("選擇"));
+//主餐單點
+_assertExists(_heading5("薑燒豬肉長堡[1]"));
+_assertVisible(_heading5("薑燒豬肉長堡[1]"));
+_assertEqual("薑燒豬肉長堡", _getText(_heading5("薑燒豬肉長堡[1]")));
+//主餐套餐
+_assertExists(_heading5("薑燒豬肉長堡套餐"));
+_assertVisible(_heading5("薑燒豬肉長堡套餐"));
+_assertEqual("薑燒豬肉長堡套餐", _getText(_heading5("薑燒豬肉長堡套餐")));
+_click(_link("取消"));
+//飲料類別
+_click(_link("飲料"));
+//飲料項目
+_assertExists(_heading5("冰蜂蜜奶茶"));
+_assertVisible(_heading5("冰蜂蜜奶茶"));
+_assertEqual("冰蜂蜜奶茶", _getText(_heading5("冰蜂蜜奶茶")));
+_click(_link("選擇[10]"));
+//飲料細項 大中小
+_assertExists(_heading5("小杯冰紅茶(無糖)"));
+_assertVisible(_heading5("小杯冰紅茶(無糖)"));
+_assertEqual("小杯冰紅茶(無糖)", _getText(_heading5("小杯冰紅茶(無糖)")));
+_assertExists(_heading5("中杯冰紅茶(無糖)"));
+_assertVisible(_heading5("中杯冰紅茶(無糖)"));
+_assertEqual("中杯冰紅茶(無糖)", _getText(_heading5("中杯冰紅茶(無糖)")));
+_assertExists(_heading5("大杯冰紅茶(無糖)"));
+_assertVisible(_heading5("大杯冰紅茶(無糖)"));
+_assertEqual("大杯冰紅茶(無糖)", _getText(_heading5("大杯冰紅茶(無糖)")));
+_click(_link("取消"));
+//點心類別
+_click(_link("點心"));
+//點心項目
+_assertExists(_heading5("薯條"));
+_assertVisible(_heading5("薯條"));
+_assertEqual("薯條", _getText(_heading5("薯條")));
+_click(_link("選擇[7]"));
+//點心細項 大中小
+_assertExists(_heading5("薯條(小)"));
+_assertVisible(_heading5("薯條(小)"));
+_assertEqual("薯條(小)", _getText(_heading5("薯條(小)")));
+_assertExists(_heading5("薯條(小)"));
+_assertVisible(_heading5("薯條(小)"));
+_assertEqual("薯條(小)", _getText(_heading5("薯條(小)")));
+_assertExists(_heading5("薯條(中)"));
+_assertVisible(_heading5("薯條(中)"));
+_assertEqual("薯條(中)", _getText(_heading5("薯條(中)")));
+_assertExists(_heading5("薯條(大)"));
+_assertVisible(_heading5("薯條(大)"));
+_assertEqual("薯條(大)", _getText(_heading5("薯條(大)")));
+_click(_image("...[2]"));
+_click(_div("combo-detail-card"));
+_click(_button("確定"));

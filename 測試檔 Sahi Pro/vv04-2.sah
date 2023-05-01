@@ -1,0 +1,9 @@
+_click(_button("中文"));
+_click(_image("where"));
+_click(_link("選擇[2]"));
+_click(_heading5("BLT安格斯黑牛堡套餐"));
+_click(_button("確定"));
+_click(_heading1("購物車"));
+_assertExists(_div("BLT安格斯黑牛堡 麥克雞塊(4)+中薯(-$15) 冰蜂蜜奶茶 無加價購 確認1刪除"));
+_assertVisible(_div("BLT安格斯黑牛堡 麥克雞塊(4)+中薯(-$15) 冰蜂蜜奶茶 無加價購 確認1刪除"));
+_assertEqual("BLT安格斯黑牛堡 麥克雞塊(4)+中薯(-$15) 冰蜂蜜奶茶 無加價購 確認1刪除", _getText(_div("BLT安格斯黑牛堡 麥克雞塊(4)+中薯(-$15) 冰蜂蜜奶茶 無加價購 確認1刪除")));

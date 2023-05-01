@@ -1,0 +1,6 @@
+_click(_button("中文"));
+_click(_image("where"));
+_click(_heading5("薑燒豬肉長堡"));
+_assertExists(_heading5("薑燒豬肉長堡"));
+_assertVisible(_heading5("薑燒豬肉長堡"));
+_assertEqual("薑燒豬肉長堡", _getText(_heading5("薑燒豬肉長堡")));

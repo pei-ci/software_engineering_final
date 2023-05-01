@@ -1,0 +1,27 @@
+_click(_button("中文"));
+_click(_image("where"));
+_click(_link("選擇[1]"));
+_click(_heading5("煙燻雞長堡套餐"));
+_click(_button("確定"));
+_click(_image("Coca-Cola.PNG"));
+_click(_link("選擇[1]"));
+_click(_image("..."));
+_click(_button("確定"));
+_click(_heading1("購物車"));
+//購物車中2份餐
+_click(_div("冰蜂蜜那堤 $90 x1"));
+_assertExists(_div("煙燻雞長堡套餐 $211 x1"));
+_assertVisible(_div("煙燻雞長堡套餐 $211 x1"));
+_assertEqual("煙燻雞長堡套餐 $211 x1", _getText(_div("煙燻雞長堡套餐 $211 x1")));
+_assertExists(_div("冰蜂蜜那堤 $90 x1"));
+_assertVisible(_div("冰蜂蜜那堤 $90 x1"));
+_assertEqual("冰蜂蜜那堤 $90 x1", _getText(_div("冰蜂蜜那堤 $90 x1")));
+_assertExists(_div("總價 $301"));
+_assertVisible(_div("總價 $301"));
+_assertEqual("總價 $301", _getText(_div("總價 $301")));
+//移除煙燻雞長堡套餐 $211 x1
+_click(_link("刪除"));
+//確認移除後購物車項目、金額的正確
+_assertExists(_div("總價 $90"));
+_assertVisible(_div("總價 $90"));
+_assertEqual("總價 $90", _getText(_div("總價 $90")));

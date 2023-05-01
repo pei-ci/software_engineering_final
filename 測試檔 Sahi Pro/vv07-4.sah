@@ -1,0 +1,9 @@
+_click(_button("中文"));
+_click(_image("where"));
+_click(_link("飲料"));
+_click(_link("選擇[2]"));
+_click(_heading5("熱蜂蜜那堤[1]"));
+_click(_button("產品特製"));
+//錯誤客製化
+_click(_heading5("冰塊"));
+_click(_button("取消"));

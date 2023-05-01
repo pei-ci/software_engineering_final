@@ -1,0 +1,29 @@
+//初始頁面，確認中文還是中文、其他內容皆為英文
+_click(_button("english"));
+_assertExists(_button("中文"));
+_assertVisible(_button("中文"));
+_assertEqual("中文", _getText(_button("中文")));
+_assertExists(_heading2("for here"));
+_assertVisible(_heading2("for here"));
+_assertEqual("for here", _getText(_heading2("for here")));
+_assertExists(_heading2("to go"));
+_assertVisible(_heading2("to go"));
+_assertEqual("to go", _getText(_heading2("to go")));
+_assertExists(_heading2("please select language"));
+_assertVisible(_heading2("please select language"));
+_assertEqual("please select language", _getText(_heading2("please select language")));
+_click(_image("where[1]"));
+//選餐頁面，確認分類與餐點名稱皆為英文
+_click(_link("Main Meal"));
+_assertExists(_heading5("Ginger Pork Burger"));
+_assertVisible(_heading5("Ginger Pork Burger"));
+_assertEqual("Ginger Pork Burger", _getText(_heading5("Ginger Pork Burger")));
+_click(_link("Beverage"));
+_assertExists(_heading5("Liced Honey Milk Tea"));
+_assertVisible(_heading5("Liced Honey Milk Tea"));
+_assertEqual("Liced Honey Milk Tea", _getText(_heading5("Liced Honey Milk Tea")));
+_click(_link("Dessert"));
+_assertExists(_heading5("Classic Platter-New 3 Kind"));
+_assertVisible(_heading5("Classic Platter-New 3 Kind"));
+_assertEqual("Classic Platter-New 3 Kind", _getText(_heading5("Classic Platter-New 3 Kind")));
+

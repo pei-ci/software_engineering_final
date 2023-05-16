@@ -7,5 +7,10 @@
 關於資料庫設計:  
 1.說明  
 分為八大資料表，分別為 SingalFood、FoodType、Foods、Order、AddonFood、Foods_Customization、Customization、ComboFood，由主要 foods 去參考其他 tables，為了避免一個人點多份單點、套餐用了 NO 屬性來區別每份，而一份訂單只會有一份 Order，並由 Order 去參考 Foods。  
-2.ER Model
+2.ERD
 ![image](https://user-images.githubusercontent.com/71923853/235461581-0fb2a1d7-3d54-4a3a-9b0c-d839a336eecb.png)
+ERD有部分錯誤  
+圖中的(one and only one)
+![one-and-only-one2](https://github.com/pei-ci/software_engineering_final/assets/71923853/59dff665-7066-4037-9084-b438953c4ce5)
+應改成 one or many
+![one-or-many2](https://github.com/pei-ci/software_engineering_final/assets/71923853/ae3c0ae9-d731-4a84-8867-b883e52b3a17)
